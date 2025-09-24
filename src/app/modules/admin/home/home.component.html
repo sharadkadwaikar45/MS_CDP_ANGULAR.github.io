@@ -1,0 +1,78 @@
+<div class="w-full flex-col bg-white dark:bg-gray-900 text-black dark:text-white">
+  <!-- Header -->
+  <header class="flex justify-between items-center px-4 py-3 md:px-6">
+    <!-- Logo -->
+    <div class="flex items-center">
+      <div class="bg-gray-100 dark:bg-gray-800 rounded-lg px-4 py-3 font-bold shadow text-sm md:text-base">
+        MB
+      </div>
+    </div>
+
+    <!-- Icons -->
+    <div class="flex ">
+      <button aria-label="Toggle Dark Mode" class="flex justify-center items-center w-12 h-7 bg-gray-50 rounded-md">
+        <mat-icon class="icon-size-5 text-gray-700 dark:text-gray-200">dark_mode</mat-icon>
+      </button>
+      <button aria-label="Menu" class="flex justify-center items-center w-12 h-7 bg-gray-50 rounded-md ml-4">
+        <mat-icon class="icon-size-5 text-gray-700 dark:text-gray-200">menu</mat-icon>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="px-4 md:px-10 pt-8 pb-1 text-center md:text-left">
+    <h1
+      class="text-[8vw] sm:text-[6vw] font-black tracking-[-0.04em] leading-none text-left uppercase mb-[0.5vw] duration-300">
+      COMPUTATIONAL DESIGN
+    </h1>
+
+  </section>
+  <section class="flex items-center px-4 md:px-10 mb-6">
+  <div class="w60 ml-auto">
+    <p class="projects-description text-gray-700">
+      A selection of my 2024–25 MS Computational Design Practices program work
+      at Columbia University's Graduate School of Architecture, Planning and
+      Preservation (GSAPP). Click on any project to learn more about the
+      process, technology, and outcomes behind each piece.
+    </p>
+  </div>
+</section>
+
+
+  <!-- Project Grid -->
+  <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 md:px-8 mb-24 mt-6">
+    <a matRipple class="relative block w-full aspect-square rounded-xl overflow-hidden shadow-lg group cursor-pointer" *ngFor="let item of demoArray">
+  <!-- Image -->
+  <img src={{item.img}} alt="Manav" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center text-center text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100 p-5">
+    <div class="text-[24px] font-semibold mb-2">{{item.title}}</div>
+    <div class="text-[16px] opacity-90">{{item.desc1}}<br>{{item.desc2}}</div>
+  </div>
+</a>
+  </section>
+
+  <!-- Footer -->
+<footer class="fixed bottom-0 left-0 w-screen z-50 flex justify-center items-end pointer-events-none pb-4 sm:pb-0">
+  <div class="w-full flex flex-col sm:flex-row justify-between items-center px-4 sm:px-8 pointer-events-auto space-y-4 sm:space-y-0 sm:space-x-4">
+    
+    <div class="rounded-full border shadow-md px-6 py-2 text-center text-sm text-gray-700 dark:text-gray-300 bg-gray-100 border-gray-200 dark:border-gray-700">
+      © 2025 Manas Bhatia, Assoc. AIA | New York, NY, USA | All rights reserved.
+    </div>
+
+    <div class="flex space-x-4">
+      <div *ngFor="let item of social">
+        <a href="#" aria-label="{{item.label}}"
+          class="flex justify-center items-center h-10 w-10 bg-gray-50 hover:opacity-75 hover:bg-gray-100 rounded-full border">
+          <mat-icon class="icon-size-5 text-black" svgIcon="feather:{{item.icon}}"></mat-icon>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+
+</div>

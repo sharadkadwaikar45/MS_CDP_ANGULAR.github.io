@@ -1,0 +1,49 @@
+.projects-title {
+    font-size: 6vw;
+    font-weight: 900;
+    letter-spacing: -0.04em;
+    line-height: 1;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 0.5vw;
+    color: var(--text-primary);
+    transition: color 0.3s 
+ease;
+}
+
+.projects-description {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin-bottom: 2vw;
+    line-height: 1.5;
+    text-align: left;
+    font-weight: 700;
+    align-self: flex-end;
+    transition: color 0.3s 
+ease;
+}
+
+.minimal-logo {
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
+    border-radius: 8px;
+    background: var(--bg-tertiary);
+    font-family: 'Asher Punk Demo Version', 'AsherPunkDemoVersion', 'Asher Punk', 'General Sans', 'Inter', Arial, sans-serif !important;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    letter-spacing: -0.02em;
+    margin-right: 1.5rem;
+    text-decoration: none;
+    box-shadow: 0 2px 12px 0 var(--shadow-color);
+    border: 1px solid var(--border-color);
+    transition: all 0.2s 
+cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    transform: translateY(0);
+}

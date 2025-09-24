@@ -1,0 +1,127 @@
+/* ----------------------------------------------------------------------------------------------------- */
+/*  @ Import/write your custom styles here.
+/*  @ Styles from this file will override 'vendors.scss' and Fuse's base styles.
+/* ----------------------------------------------------------------------------------------------------- */
+
+
+
+// .bg-login{
+//     background-image: url(./../../public/images/business.jpg);
+//     background-position: bottom;
+//     background-size: cover;
+// }
+.bg-login{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(./../../public/images/bgsplash.jpg);
+    background-size: contain;
+}
+.primarytxt{
+    color: #491988!important;
+}
+.primarybg{
+    background: #491988!important;
+    color: #ffffff!important;
+}
+.mat-mdc-form-field.mat-form-field-appearance-fill .mat-mdc-text-field-wrapper .mat-mdc-form-field-flex .mat-mdc-form-field-infix {
+min-height: 35px !important;
+}
+settings{
+    display: none!important;
+}
+fuse-vertical-navigation-basic-item>.fuse-vertical-navigation-item-wrapper .fuse-vertical-navigation-item:not(.fuse-vertical-navigation-item-disabled).fuse-vertical-navigation-item-active {
+    background-color: #491988!important;
+    color: #ffffff !important;
+}
+fuse-vertical-navigation-basic-item>.fuse-vertical-navigation-item-wrapper .fuse-vertical-navigation-item{
+    color: #000 !important;
+}
+fuse-vertical-navigation fuse-vertical-navigation-collapsable-item {
+   color: black !important; 
+}
+languages, search, shortcuts, messages{
+    display: none!important;
+}
+fuse-fullscreen{
+    display: none!important;
+}
+
+// table css
+.mat-elevation-z8{
+    box-shadow: none !important;
+}
+.mat-mdc-paginator .mat-mdc-paginator-container {
+    justify-content: right !important;
+}
+td.mat-cell{
+    padding-left: 5px!important;
+    padding-right: 5px!important;
+}
+table{
+    border:  1px solid #e2e8f0 !important;
+}
+th{
+    border:  1px solid #e2e8f0 !important;
+    padding:10px  
+}
+td{
+    border:  1px solid #e2e8f0 !important; 
+    padding:10px
+}
+.mdc-data-table__header-cell {
+    padding: 0 10px !important;
+}
+.mat-column-name, .mat-header-cell, .mat-cell{
+    border-right: 1px solid #e2e8f0 !important;
+    border-left: 1px solid #e2e8f0 !important;
+    align-self: stretch !important;
+    text-align: center
+}
+.mat-column-position{
+    border-right: 1px solid #e2e8f0 !important;
+    border-left: 1px solid #e2e8f0 !important;
+    align-self: stretch !important;
+    // text-align: center !important;
+}
+body.light .mat-sort-header-arrow, body .light .mat-sort-header-arrow {
+    color: #000000;
+    opacity: 1;
+   
+    justify-content: center;
+}
+.mat-mdc-header-row {
+    background-color: #491988 !important;
+    color: #ffffff !important;
+    height: 45px !important;
+}
+.mat-mdc-row{
+    height: 45px !important;
+}
+.mat-sort-header-arrow svg {
+    width: 17px !important;
+    fill: rgb(255 255 255) !important;
+}
+
+.dashboardicon{
+    position: absolute;
+    right: 0px;
+    bottom: -20px;
+    width: 75px;
+}
+.mdc-floating-label--required:not(.mdc-floating-label--hide-required-marker)::after {
+    color: red !important;
+}
+
+.uplodBtn {
+  background: #cfa1ea;
+}
+.uplodBtn:hover {
+  background: #8919cc;
+}
+tt{
+  color: #000;
+}
+tt:hover {
+  color: #ffffff;
+}
+.uplodBtn mat-icon {
+  fill: #000;
+}
